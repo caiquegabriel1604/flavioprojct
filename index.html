@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados Simulado</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banco de Dados Simulado</h1>
+        
+       
+        <h2>CLIENTES</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>CLIENTE_ID</th>
+                    <th>NOME</th>
+                    <th>CPF</th>
+                    <th>DATA_NASCIMENTO</th>
+                    <th>TELEFONE</th>
+                    <th>EMAIL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10001</td>
+                    <td>João Silva</td>
+                    <td>123.456.789-00</td>
+                    <td>1985-06-15</td>
+                    <td>(11) 99999-0000</td>
+                    <td>joao.silva@email.com</td>
+                </tr>
+                <tr>
+                    <td>10002</td>
+                    <td>Maria Oliveira</td>
+                    <td>987.654.321-00</td>
+                    <td>1990-09-22</td>
+                    <td>(21) 98888-0000</td>
+                    <td>maria.oliveira@email.com</td>
+                </tr>
+                <tr>
+                    <td>10003</td>
+                    <td>Pedro Costa</td>
+                    <td>555.444.333-00</td>
+                    <td>1983-03-10</td>
+                    <td>(31) 97777-0000</td>
+                    <td>pedro.costa@email.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>TIPOS DE CONTA</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>TIPO_ID</th>
+                    <th>DESCRICAO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Conta Corrente</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Conta Poupança</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Conta Salário</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+        <h2>CONTA BANCÁRIA</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>CONTA_ID</th>
+                    <th>CLIENTE_ID</th>
+                    <th>TIPO_ID</th>
+                    <th>SALDO</th>
+                    <th>DATA_ABERTURA</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>200001</td>
+                    <td>10001</td>
+                    <td>1</td>
+                    <td>1,500.00</td>
+                    <td>2021-01-10</td>
+                    <td>Ativa</td>
+                </tr>
+                <tr>
+                    <td>200002</td>
+                    <td>10002</td>
+                    <td>2</td>
+                    <td>2,000.00</td>
+                    <td>2022-05-15</td>
+                    <td>Ativa</td>
+                </tr>
+                <tr>
+                    <td>200003</td>
+                    <td>10003</td>
+                    <td>1</td>
+                    <td>800.00</td>
+                    <td>2020-09-20</td>
+                    <td>Bloqueada</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>TRANSAÇÕES</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>TRANSACAO_ID</th>
+                    <th>CONTA_ID</th>
+                    <th>VALOR</th>
+                    <th>DATA</th>
+                    <th>TIPO</th>
+                    <th>DESCRICAO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>300001</td>
+                    <td>200001</td>
+                    <td>200.00</td>
+                    <td>2023-08-10</td>
+                    <td>Depósito</td>
+                    <td>Depósito inicial</td>
+                </tr>
+                <tr>
+                    <td>300002</td>
+                    <td>200001</td>
+                    <td>-50.00</td>
+                    <td>2023-08-15</td>
+                    <td>Saque</td>
+                    <td>Saque realizado na agência</td>
+                </tr>
+                <tr>
+                    <td>300003</td>
+                    <td>200002</td>
+                    <td>500.00</td>
+                    <td>2023-08-12</td>
+                    <td>Depósito</td>
+                    <td>Depósito para conta poupança</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>AGÊNCIAS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>AGENCIA_ID</th>
+                    <th>NOME</th>
+                    <th>ENDERECO</th>
+                    <th>TELEFONE</th>
+                    <th>CIDADE</th>
+                    <th>ESTADO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>40001</td>
+                    <td>Agência Centro</td>
+                    <td>Rua 1, Centro, 123</td>
+                    <td>(11) 33333-0000</td>
+                    <td>São Paulo</td>
+                    <td>SP</td>
+                </tr>
+                <tr>
+                    <td>40002</td>
+                    <td>Agência Zona Sul</td>
+                    <td>Rua 2, Zona Sul, 456</td>
+                    <td>(21) 33333-0000</td>
+                    <td>Rio de Janeiro</td>
+                    <td>RJ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
